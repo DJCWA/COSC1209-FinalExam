@@ -1,5 +1,5 @@
 # Simple static site using Nginx
-FROM nginx:alpine
+FROM public.ecr.aws/docker/library/nginx:alpine
 
 # Replace the default server config so Nginx listens on port 8080
 COPY nginx.conf /etc/nginx/conf.d/default.conf
